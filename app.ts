@@ -13,12 +13,10 @@ app.get('/exercicio1', (req, res) => {
     });
 });
 
-app.post('/exercicio2', (req, res) => {
+app.get('/exercicio2', (req, res) => {
     const { distancia, combustivel } = req.body as { distancia:number, combustivel: number};
     const consumoMedio:number = distancia / combustivel;
     res.json({
-        distancia,
-        combustivel,
         consumoMedio: consumoMedio.toFixed(2),
     });
 });
@@ -27,12 +25,11 @@ app.get('/exercicio3', (req, res) => {
     const {numero} = req.body as { numero:number };
     const resto: number = numero % 3;
     res.json({
-        numero,
-        resto,
+        resto
     });
 });
 
-app.post('/exercicio4', (req, res) => {
+app.get('/exercicio4', (req, res) => {
     const { a, b, c } = req.body as { a:number, b:number, c:number};
     const delta:number = b * b - 4 * a * c;
     if (delta < 0) {
@@ -56,11 +53,10 @@ app.get('/exercicio5', (req, res) => {
     const notas1:number = valor;
 
     res.json({
-        valorOriginal: req.body.saque,
+        valorSaque: req.body.saque,
         notas50,
         notas10,
         notas1,
-
     });
 });
 
