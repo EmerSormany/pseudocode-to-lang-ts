@@ -19,7 +19,7 @@ Questões:
 # API
 
 Fiz os exercício como uma API, na qual cada endpoint corresponde a um exercício. 
-Para executar clone este repositório ou faça o em ZIP, extraia, instale as dependências com o comando **npm install** e execute o comando **npm run start**.
+Para executar clone este repositório ou faça o download em ZIP, extraia, instale as dependências com o comando **npm install** e execute o comando **npm run start**.
 
 ### Exercício 1
  * endpoint: '/exercicio1'
